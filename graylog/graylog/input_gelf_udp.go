@@ -22,4 +22,5 @@ type InputGELFUDPAttrs struct {
 	BindAddress         string `json:"bind_address,omitempty" v-create:"required" v-update:"required"`
 	Port                int    `json:"port,omitempty" v-create:"required" v-update:"required"`
 	RecvBufferSize      int    `json:"recv_buffer_size,omitempty" v-create:"required" v-update:"required"`
+	NumberWorkThreads   int    `json:"number_work_threads,omitempty"`
 }
